@@ -4,6 +4,7 @@ import Introduction from "./components/Introduction";
 import Accommodations from "./components/Accommodations";
 import Amenities from "./components/Amenities";
 import ContactCTA from "./components/ContactCTA";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Accommodations />
       <Amenities />
       <ContactCTA />
+      <Footer />
     </main>
   );
 }
