@@ -3,19 +3,19 @@ import { Mail, Phone, MapPin } from "lucide-react";
 const footerLinks = {
   explore: [
     { label: "Home", href: "/" },
-    { label: "The Retreat", href: "#the-retreat" },
-    { label: "Accommodations", href: "#accommodations" },
-    { label: "Experiences", href: "#experiences" },
+    { label: "The Retreat", href: "/#the-retreat" },
+    { label: "Accommodations", href: "/#accommodations" },
+    { label: "Experiences", href: "/#experiences" },
   ],
   information: [
-    { label: "About Us", href: "#" },
-    { label: "Gallery", href: "#gallery" },
-    { label: "Policies", href: "#" },
-    { label: "FAQ", href: "#" },
+    { label: "About Us", href: "/#the-retreat" },
+    { label: "Gallery", href: "/#gallery" },
+    { label: "Policies", href: "/faq" },
+    { label: "FAQ", href: "/faq" },
   ],
   contact: [
-    { label: "Contact", href: "#contact" },
-    { label: "Book Your Stay", href: "#" },
+    { label: "Contact", href: "/#contact" },
+    { label: "Book Your Stay", href: "/#contact" },
     { label: "Gift Cards", href: "#" },
     { label: "Careers", href: "#" },
   ],

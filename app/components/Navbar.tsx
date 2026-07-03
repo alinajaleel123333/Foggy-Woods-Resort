@@ -6,11 +6,12 @@ import Link from "next/link";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "The Retreat", href: "#the-retreat" },
-  { label: "Accommodations", href: "#accommodations" },
-  { label: "Experiences", href: "#experiences" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Contact", href: "#contact" },
+  { label: "The Retreat", href: "/#the-retreat" },
+  { label: "Accommodations", href: "/#accommodations" },
+  { label: "Experiences", href: "/#experiences" },
+  { label: "Gallery", href: "/#gallery" },
+  { label: "Contact", href: "/#contact" },
+  { label: "FAQs", href: "/faq" },
 ];
 
 export default function Navbar() {

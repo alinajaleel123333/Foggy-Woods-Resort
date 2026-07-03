@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Chatbot from "./components/Chatbot";
 
 export const metadata: Metadata = {
   title: "Foggy Woods | Where Fog Meets Serenity",
@@ -19,7 +20,10 @@ export default function RootLayout({
       <head>
         <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@1,2&display=swap" rel="stylesheet" />
       </head>
-      <body className="min-h-full flex flex-col bg-zinc-50 font-sans text-zinc-900">{children}</body>
+      <body className="min-h-full flex flex-col bg-zinc-50 font-sans text-zinc-900">
+        {children}
+        <Chatbot />
+      </body>
     </html>
   );
 }
