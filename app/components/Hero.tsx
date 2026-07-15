@@ -5,24 +5,46 @@ import Image from "next/image";
 
 const slides = [
   {
-    url: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=1920&q=85",
-    alt: "Misty morning pine forest",
+    url: "/hero/resort-pool.jpg",
+    alt: "Foggy Woods resort exterior with sparkling swimming pool",
     label: "01",
+    objectPosition: "center 65%",   // shift down to show the pool
   },
   {
-    url: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=1920&q=85",
-    alt: "Foggy forest path",
+    url: "/hero/room-mountain-view.jpg",
+    alt: "Luxury room with panoramic mountain view from private balcony",
     label: "02",
+    objectPosition: "center 45%",   // shift up slightly to show mountains through window
   },
   {
-    url: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&q=85",
-    alt: "Sunbeams through forest canopy",
+    url: "/hero/pool-suite.jpg",
+    alt: "Premium pool suite with ambient pink lighting and waterfall feature",
     label: "03",
+    objectPosition: "center 40%",   // shift up to show pink ceiling lighting + pool
   },
   {
-    url: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1920&q=85",
-    alt: "Serene forest landscape",
+    url: "/hero/resort-garden.jpg",
+    alt: "Resort garden with decorative swing and lush landscaping",
     label: "04",
+    objectPosition: "center 55%",   // shift down to show swing seat and lawn
+  },
+  {
+    url: "/hero/premium-room.jpg",
+    alt: "Premium room with golden accent wall and mountain views",
+    label: "05",
+    objectPosition: "center 55%",   // shift down to show bed and golden wall
+  },
+  {
+    url: "/hero/pool-suite-view.jpg",
+    alt: "Pool suite with private plunge pool and tropical greenery",
+    label: "06",
+    objectPosition: "center 45%",   // shift up to show ceiling lights + pool view
+  },
+  {
+    url: "/hero/pool-suite-interior.jpg",
+    alt: "Luxury pool suite with waterfall feature and private plunge pool",
+    label: "07",
+    objectPosition: "35% 55%",      // shift left + down to focus on pool & waterfall
   },
 ];
 
@@ -76,8 +98,11 @@ export default function Hero() {
               alt={slide.alt}
               fill
               priority={i === 0}
-              quality={85}
-              className={`object-cover object-center transition-transform duration-[6000ms] ease-out ${
+              quality={100}
+              unoptimized
+              sizes="100vw"
+              style={{ objectPosition: slide.objectPosition }}
+              className={`object-cover transition-transform duration-[6000ms] ease-out ${
                 isActive ? "scale-110" : "scale-100"
               }`}
             />
@@ -86,8 +111,7 @@ export default function Hero() {
       })}
 
       {/* ── Overlays ── */}
-      <div className="absolute inset-0 z-20 bg-gradient-to-b from-black/50 via-black/10 to-black/70" />
-      <div className="absolute inset-0 z-20 bg-black/20" />
+      <div className="absolute inset-0 z-20 bg-gradient-to-b from-black/30 via-transparent to-black/50" />
 
       {/* ── Hero Content ── */}
       <div className="relative z-30 h-full flex flex-col items-center justify-center text-center px-6">
@@ -96,7 +120,7 @@ export default function Hero() {
           className="text-white/60 uppercase tracking-[0.35em] text-xs md:text-sm mb-6"
           style={{ fontFamily: "'Satoshi', sans-serif" }}
         >
-          A Sanctuary in the Woods
+          The perfect mountain escape
         </p>
 
         {/* Main Title */}

@@ -16,7 +16,7 @@ export default function Introduction() {
           className="text-[#78716c] text-sm md:text-base lg:text-[17px] leading-[1.8] md:leading-[2] tracking-wide"
           style={{ fontFamily: "'Satoshi', sans-serif", fontWeight: 400 }}
         >
-          Nestled in a serene setting, our luxury lodge and hotel offer a perfect blend of elegance, comfort, and world-class hospitality. Designed for discerning travelers, each space is crafted with refined interiors, modern amenities, and breathtaking views. Whether you seek a tranquil escape, a romantic getaway, or a premium business stay, we ensure an unparalleled experience marked by personalized service and timeless sophistication. Indulge in fine dining, rejuvenate in our wellness spaces, and immerse yourself in an ambiance of pure luxury.
+          Surrounded by the breathtaking beauty of Wayanad and overlooking the majestic Chembra Peak, Foggy Woods Resort offers a peaceful retreat where luxury meets nature. Our elegant private pool villas, stunning rooftop sunset views, and thoughtfully designed accommodations create the perfect escape for families and couples seeking comfort, privacy, and unforgettable moments. Wake up to panoramic mountain vistas, unwind in the tranquility of the misty hills, and experience warm hospitality that makes every stay truly special. Whether you&apos;re planning a romantic getaway, a family vacation, or a relaxing weekend retreat, Foggy Woods Resort promises an experience filled with serenity, comfort, and lasting memories.
         </p>
       </div>
     </section>

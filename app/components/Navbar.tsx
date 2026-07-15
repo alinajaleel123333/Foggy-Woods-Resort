@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { X, Menu } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -43,7 +44,15 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
 
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
+          <Link href="/" className="flex-shrink-0 flex items-center gap-2.5">
+            <Image
+              src="/logo.jpg"
+              alt="Foggy Woods logo"
+              width={36}
+              height={36}
+              className="rounded-full object-cover"
+              unoptimized
+            />
             <span
               className={`text-xl md:text-2xl tracking-wide transition-colors duration-300 ${
                 isScrolled ? "text-zinc-900" : "text-white"
@@ -56,14 +65,17 @@ export default function Navbar() {
 
           {/* Right: CTA + Hamburger */}
           <div className="flex items-center gap-6">
-            <span
-              className={`hidden md:block text-xs tracking-[0.25em] uppercase font-medium transition-colors duration-300 ${
-                isScrolled ? "text-zinc-700" : "text-white/80"
+            <Link
+              href="/#contact"
+              className={`hidden md:inline-flex items-center px-5 py-2 rounded-full text-xs tracking-[0.2em] uppercase font-semibold border transition-all duration-300 ${
+                isScrolled
+                  ? "border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white"
+                  : "border-white/70 text-white hover:bg-white hover:text-zinc-900"
               }`}
               style={{ fontFamily: "'Satoshi', sans-serif" }}
             >
               Book Your Stay
-            </span>
+            </Link>
 
             <button
               onClick={() => setSidebarOpen(true)}

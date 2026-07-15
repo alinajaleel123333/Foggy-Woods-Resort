@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Chatbot from "./components/Chatbot";
 
 export const metadata: Metadata = {
   title: "Foggy Woods | Where Fog Meets Serenity",
@@ -22,7 +21,6 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col bg-zinc-50 font-sans text-zinc-900">
         {children}
-        <Chatbot />
       </body>
     </html>
   );
