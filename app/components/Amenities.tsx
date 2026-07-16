@@ -6,25 +6,25 @@ const amenities = [
     title: "Nature Views",
     badge: "SCENIC",
     image: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=800&q=80",
-    description: "Wake up to breathtaking views of the misty pine forests. Every window in our resort frames a living, ever-changing painting of pristine nature and deep serenity.",
+    description: "Surrounded by the tranquil beauty of Wayanad, our resort offers premium amenities that blend comfort with nature. Relax amidst panoramic mountain views, unwind in peaceful spaces, and enjoy a stay where every moment is enhanced by the charm of Chembra Peak.",
   },
   {
     title: "Swimming Pool",
     badge: "REFRESH",
-    image: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800&q=80",
-    description: "Take a tranquil dip in our temperature-controlled pool, perfectly positioned to offer sweeping, uninterrupted views of the surrounding foggy valley.",
+    image: "/amenities/swimming-pool.jpg",
+    description: "A refreshing pool experience amidst nature, perfect for relaxation, leisure, and memorable moments with loved ones.",
   },
   {
     title: "Campfire Nights",
     badge: "WARMTH",
-    image: "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=800&q=80",
-    description: "Gather around the crackling outdoor fire pit under the starlit sky. Share stories, toast marshmallows, and create lasting memories in the crisp evening air.",
+    image: "/amenities/campfire-ai.png",
+    description: "Gather around the warm glow of the campfire and enjoy cozy evenings filled with laughter, stories, and unforgettable moments under the stars.",
   },
   {
-    title: "Kids Play Area",
-    badge: "FAMILY",
-    image: "https://images.unsplash.com/photo-1472162072942-cd5147eb3902?w=800&q=80",
-    description: "A beautifully integrated, safe outdoor space designed specifically for our youngest guests to explore, play freely, and establish their own connection with nature.",
+    title: "Rooftop Sunset View",
+    badge: "VIEW",
+    image: "/amenities/rooftop-view.jpg",
+    description: "Take in breathtaking sunset views from our rooftop, where the mountains and mist create the perfect setting for a peaceful evening.",
   }
 ];
 
@@ -59,6 +59,7 @@ export default function Amenities() {
                   src={item.image}
                   alt={item.title}
                   fill
+                  unoptimized
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 {/* White Badge */}

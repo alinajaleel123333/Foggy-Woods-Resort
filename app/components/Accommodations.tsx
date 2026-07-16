@@ -7,12 +7,19 @@ import { Wifi, Snowflake, Tv, Coffee, Bath, ChevronRight, ChevronLeft } from "lu
 const accommodations = [
   {
     title: "Premier Family Suite with Mountain View",
-    images: ["/accommodations/premier-family-suite.jpg"],
+    images: [
+      "/accommodations/premier-family-suite.jpg",
+      "/accommodations/premier-family-suite-2.jpg"
+    ],
     description: "Featuring two spacious bedrooms for up to 4 adults, this elegant family suite offers breathtaking Chembra Peak and mountain views. Thoughtfully designed for comfort and relaxation, it’s the perfect retreat for a memorable family stay.",
   },
   {
     title: "Grand Family Suite with Mountain View",
-    images: ["/accommodations/grand-family-suite.jpg"],
+    images: [
+      "/accommodations/grand-family-suite.jpg",
+      "/accommodations/grand-family-suite-2.jpg",
+      "/accommodations/grand-family-suite-3.jpg"
+    ],
     description: "Our three-bedroom Grand Family Suite comfortably accommodates up to 6 adults, offering breathtaking mountain views and spacious interiors. Designed for larger families, it combines modern comfort, privacy, and the serene beauty of Chembra Peak for a truly memorable stay.",
   },
   {
@@ -25,6 +32,11 @@ const accommodations = [
       "/accommodations/pool-villa-4.jpg"
     ],
     description: "Designed exclusively for couples, our Private Pool Villa – Chembra View features a private swimming pool, elegant interiors, and panoramic mountain views. Unwind in complete privacy while enjoying a romantic escape surrounded by the serene beauty of Chembra Peak.",
+  },
+  {
+    title: "Double Deluxe Room",
+    images: ["/accommodations/double-deluxe-room.jpg"],
+    description: "Perfect for couples and small families of up to 2 adults, our Deluxe Mountain View Room offers a cozy and elegant retreat with breathtaking views of Chembra Peak. Thoughtfully designed with modern comforts and a peaceful ambiance.",
   },
 ];
 

@@ -9,8 +9,6 @@ const footerLinks = {
   ],
   information: [
     { label: "About Us", href: "/#the-retreat" },
-    { label: "Gallery", href: "/#gallery" },
-    { label: "Policies", href: "/faq" },
     { label: "FAQ", href: "/faq" },
   ],
   contact: [
@@ -40,7 +38,7 @@ export default function Footer() {
               className="text-white/60 text-sm leading-relaxed"
               style={{ fontFamily: "'Satoshi', sans-serif" }}
             >
-              A luxury resort tucked away in misty pine woods. Experience ultimate serenity in nature's embrace.
+              Nestled amidst the misty hills of Meppadi, Wayanad, Foggy Woods Resort offers a peaceful escape with breathtaking views of Chembra Peak. Experience comfortable stays, warm hospitality, and the perfect blend of nature and relaxation.
             </p>
           </div>
 
@@ -106,31 +104,40 @@ export default function Footer() {
                   className="text-white/60 text-sm leading-relaxed"
                   style={{ fontFamily: "'Satoshi', sans-serif" }}
                 >
-                  1234 Serenity Way, Plot 42<br />
-                  Misty Mountains, OR 97028
+                  Meppadi Rd, Chundale<br />
+                  Kunnampetta, Kerala 673123
                 </span>
               </li>
               {/* Email */}
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-white/40 shrink-0" strokeWidth={1.5} />
                 <a 
-                  href="mailto:info@foggywoods.com"
+                  href="mailto:foggywoods1@gmail.com"
                   className="text-white/60 text-sm hover:text-white transition-colors duration-300"
                   style={{ fontFamily: "'Satoshi', sans-serif" }}
                 >
-                  info@foggywoods.com
+                  foggywoods1@gmail.com
                 </a>
               </li>
               {/* Phone */}
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-white/40 shrink-0" strokeWidth={1.5} />
-                <a 
-                  href="tel:+15551234567"
-                  className="text-white/60 text-sm hover:text-white transition-colors duration-300"
-                  style={{ fontFamily: "'Satoshi', sans-serif" }}
-                >
-                  +1 (555) 123-4567
-                </a>
+                <div className="flex flex-col">
+                  <a 
+                    href="tel:+919074450023"
+                    className="text-white/60 text-sm hover:text-white transition-colors duration-300"
+                    style={{ fontFamily: "'Satoshi', sans-serif" }}
+                  >
+                    +91 9074450023
+                  </a>
+                  <a 
+                    href="tel:+919074410023"
+                    className="text-white/60 text-sm hover:text-white transition-colors duration-300"
+                    style={{ fontFamily: "'Satoshi', sans-serif" }}
+                  >
+                    +91 9074410023
+                  </a>
+                </div>
               </li>
             </ul>
           </div>

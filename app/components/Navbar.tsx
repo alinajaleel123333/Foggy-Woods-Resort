@@ -10,7 +10,6 @@ const navLinks = [
   { label: "The Retreat", href: "/#the-retreat" },
   { label: "Accommodations", href: "/#accommodations" },
   { label: "Experiences", href: "/#experiences" },
-  { label: "Gallery", href: "/#gallery" },
   { label: "Contact", href: "/#contact" },
   { label: "FAQs", href: "/faq" },
 ];

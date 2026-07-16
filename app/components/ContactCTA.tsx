@@ -8,7 +8,7 @@ export default function ContactCTA() {
         
         {/* Google Map Embed */}
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178877.8596660142!2d-121.93605510696989!3d45.31295324630713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54be1c6ba4d78839%3A0xcfdcc6bf2848972e!2sMount%20Hood%20National%20Forest!5e0!3m2!1sen!2sus!4v1714578103328!5m2!1sen!2sus"
+          src="https://maps.google.com/maps?q=Foggy+Woods+Resort,+Meppadi+Rd,+Chundale,+Kunnampetta,+Kerala+673123&t=&z=14&ie=UTF8&iwloc=&output=embed"
           width="100%"
           height="100%"
           style={{ border: 0 }}
@@ -54,8 +54,8 @@ export default function ContactCTA() {
               className="text-[#78716c] text-sm lg:text-base leading-[2] flex-1 pt-1"
               style={{ fontFamily: "'Satoshi', sans-serif" }}
             >
-              <p>1234 Serenity Way, Plot 42</p>
-              <p>Misty Mountains, OR 97028, USA</p>
+              <p>Meppadi Rd, Chundale</p>
+              <p>Kunnampetta, Kerala 673123</p>
             </div>
           </div>
 
@@ -74,8 +74,7 @@ export default function ContactCTA() {
               className="text-[#78716c] text-sm lg:text-base leading-[2] flex-1 pt-1"
               style={{ fontFamily: "'Satoshi', sans-serif" }}
             >
-              <p className="hover:text-[#5d3e2e] cursor-pointer transition-colors w-max">info@foggywoods.com</p>
-              <p className="hover:text-[#5d3e2e] cursor-pointer transition-colors w-max">booking@foggywoods.com</p>
+              <p className="hover:text-[#5d3e2e] cursor-pointer transition-colors w-max">foggywoods1@gmail.com</p>
             </div>
           </div>
 
@@ -94,8 +93,8 @@ export default function ContactCTA() {
               className="text-[#78716c] text-sm lg:text-base leading-[2] flex-1 pt-1"
               style={{ fontFamily: "'Satoshi', sans-serif" }}
             >
-              <p className="hover:text-[#5d3e2e] cursor-pointer transition-colors w-max">+1 (555) 123-4567</p>
-              <p className="hover:text-[#5d3e2e] cursor-pointer transition-colors w-max">+1 (555) 987-6543</p>
+              <p className="hover:text-[#5d3e2e] cursor-pointer transition-colors w-max">+91 9074450023</p>
+              <p className="hover:text-[#5d3e2e] cursor-pointer transition-colors w-max">+91 9074410023</p>
             </div>
           </div>
 

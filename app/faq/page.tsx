@@ -9,21 +9,17 @@ const faqData = [
     questions: [
       {
         q: "What is Foggy Woods?",
-        a: "Foggy Woods is a luxury nature retreat tucked away in misty pine forests. We offer an exclusive experience of elegance, comfort, and world-class hospitality, blending refined modern interiors with pristine natural beauty."
+        a: "Foggy Woods Resort is a peaceful escape nestled amidst the misty hills of Meppadi, Wayanad. We offer comfortable stays, warm hospitality, and the perfect blend of nature and relaxation with breathtaking views of Chembra Peak."
       },
       {
         q: "How can I book a stay?",
-        a: "You can book directly through our website by clicking the 'Book Your Stay' button, or by reaching out to our booking team at booking@foggywoods.com or call +1 (555) 123-4567."
+        a: "You can book directly through our website by clicking the 'Book Your Stay' button, or by reaching out to our booking team at foggywoods1@gmail.com or calling us at +91 9074450023 / +91 9074410023."
       }
     ]
   },
   {
     category: "Check-In & Stay Details",
     questions: [
-      {
-        q: "What are the check-in and check-out times?",
-        a: "Check-in begins at 3:00 PM. Check-out is by 11:00 AM. Early check-in or late check-out may be arranged upon request, subject to room availability."
-      },
       {
         q: "What is your cancellation policy?",
         a: "Reservations can be fully refunded if cancelled at least 7 days prior to your scheduled arrival. Cancellations made within 7 days of arrival will be charged for the first night of the stay."
@@ -39,15 +35,15 @@ const faqData = [
     questions: [
       {
         q: "What types of rooms are available?",
-        a: "We offer three curated categories of rooms: \n1. Family Suites: Extra-spacious rooms with natural accents, designed for families.\n2. Private Pool Villa: Premium villas featuring a private plunge pool, king-sized bed, and views of the valley.\n3. Ethnic Standard Room: Stylish rooms featuring local native decor and warm, cozy finishes."
+        a: "We offer four curated categories of rooms: \n1. Grand Family Suite with Mountain View: Spacious three-bedroom suite for up to 6 adults.\n2. Premier Family Suite: Perfect for families of up to 4 adults.\n3. Private Pool Villa: Designed exclusively for couples with a private pool.\n4. Double Deluxe Room: Cozy retreat for couples and small families."
       },
       {
         q: "What amenities are included in my stay?",
-        a: "All guests receive complimentary high-speed WiFi, secure private parking, access to the temperature-controlled scenic swimming pool, and access to our nightly starlit campfire gatherings."
+        a: "All guests receive complimentary high-speed WiFi, secure private parking, access to the refreshing swimming pool, starlit campfire gatherings, and breathtaking rooftop sunset views of Chembra Peak."
       },
       {
-        q: "Do you have dining and spa facilities?",
-        a: "Yes, we feature fine dining spaces serving locally sourced organic cuisine and wellness spa rooms designed for body and mind rejuvenation."
+        q: "What makes the location of Foggy Woods special?",
+        a: "Our resort is situated in the serene environment of Meppadi, Wayanad. Every part of the resort, from our rooftop to our swimming pool, is designed to offer sweeping, panoramic views of the famous Chembra Peak and the surrounding lush nature."
       }
     ]
   }
@@ -79,7 +75,7 @@ export default function FAQPage() {
             className="text-white/70 text-sm md:text-base max-w-xl mx-auto font-light leading-relaxed"
             style={{ fontFamily: "'Satoshi', sans-serif" }}
           >
-            Find details on check-in, policies, rooms, and experiences at Foggy Woods. If you need further assistance, our AI assistant is here to help.
+            Find details on our accommodations, policies, and experiences at Foggy Woods Resort. If you need further assistance, please don't hesitate to contact our team.
           </p>
         </div>
       </section>
