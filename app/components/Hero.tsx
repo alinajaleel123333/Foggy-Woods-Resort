@@ -5,46 +5,34 @@ import Image from "next/image";
 
 const slides = [
   {
-    url: "/hero/resort-pool.jpg",
-    alt: "Foggy Woods resort exterior with sparkling swimming pool",
-    label: "01",
-    objectPosition: "center 65%",   // shift down to show the pool
-  },
-  {
-    url: "/hero/room-mountain-view.jpg",
+    url: "/hero/hero-new-1.jpg",
     alt: "Luxury room with panoramic mountain view from private balcony",
+    label: "01",
+    objectPosition: "center center",
+  },
+  {
+    url: "/hero/hero-new-2.jpg",
+    alt: "Foggy Woods resort exterior with sparkling swimming pool",
     label: "02",
-    objectPosition: "center 45%",   // shift up slightly to show mountains through window
+    objectPosition: "center center",
   },
   {
-    url: "/hero/pool-suite.jpg",
-    alt: "Premium pool suite with ambient pink lighting and waterfall feature",
-    label: "03",
-    objectPosition: "center 40%",   // shift up to show pink ceiling lighting + pool
-  },
-  {
-    url: "/hero/resort-garden.jpg",
+    url: "/hero/hero-new-3.jpg",
     alt: "Resort garden with decorative swing and lush landscaping",
+    label: "03",
+    objectPosition: "center center",
+  },
+  {
+    url: "/hero/hero-new-4.jpg",
+    alt: "Breathtaking mountain view from a private resort balcony",
     label: "04",
-    objectPosition: "center 55%",   // shift down to show swing seat and lawn
+    objectPosition: "center center",
   },
   {
-    url: "/hero/premium-room.jpg",
-    alt: "Premium room with golden accent wall and mountain views",
+    url: "/hero/hero-new-5.jpg",
+    alt: "Premium pool suite with ambient lighting and private plunge pool",
     label: "05",
-    objectPosition: "center 55%",   // shift down to show bed and golden wall
-  },
-  {
-    url: "/hero/pool-suite-view.jpg",
-    alt: "Pool suite with private plunge pool and tropical greenery",
-    label: "06",
-    objectPosition: "center 45%",   // shift up to show ceiling lights + pool view
-  },
-  {
-    url: "/hero/pool-suite-interior.jpg",
-    alt: "Luxury pool suite with waterfall feature and private plunge pool",
-    label: "07",
-    objectPosition: "35% 55%",      // shift left + down to focus on pool & waterfall
+    objectPosition: "center center",
   },
 ];
 
@@ -98,9 +86,8 @@ export default function Hero() {
               alt={slide.alt}
               fill
               priority={i === 0}
-              quality={100}
-              unoptimized
-              sizes="100vw"
+              quality={90}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
               style={{ objectPosition: slide.objectPosition }}
               className={`object-cover transition-transform duration-[6000ms] ease-out ${
                 isActive ? "scale-110" : "scale-100"
@@ -128,7 +115,7 @@ export default function Hero() {
           className="text-white text-[clamp(3.5rem,10vw,9rem)] leading-[0.9] mb-8 drop-shadow-2xl"
           style={{ fontFamily: "'Boska', serif", fontWeight: 500, letterSpacing: '-0.03em' }}
         >
-          Foggy Woods
+          Foggy Woods <span className="text-[0.55em] text-white/90 tracking-normal" style={{ fontWeight: 400 }}>Resort</span>
         </h1>
 
         {/* Tagline */}
@@ -177,20 +164,7 @@ export default function Hero() {
         {String(current + 1).padStart(2, "0")}&nbsp;/&nbsp;{String(slides.length).padStart(2, "0")}
       </div>
 
-      {/* ── Scroll Cue (bottom-left) ── */}
-      <div
-        className="absolute bottom-8 left-8 md:left-12 z-30 flex flex-col items-center gap-2"
-      >
-        <div className="w-[1px] h-12 bg-white/20 relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full bg-white/80 animate-[scroll-line_2s_ease-in-out_infinite]" style={{ height: "40%" }} />
-        </div>
-        <span
-          className="text-white/40 text-[10px] uppercase tracking-[0.25em] mt-1"
-          style={{ fontFamily: "'Satoshi', sans-serif" }}
-        >
-          Scroll
-        </span>
-      </div>
+
 
     </section>
   );

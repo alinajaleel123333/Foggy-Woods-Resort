@@ -5,7 +5,7 @@ const amenities = [
   {
     title: "Nature Views",
     badge: "SCENIC",
-    image: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1542224566-6e85f2e6772f?w=800&q=80",
     description: "Surrounded by the tranquil beauty of Wayanad, our resort offers premium amenities that blend comfort with nature. Relax amidst panoramic mountain views, unwind in peaceful spaces, and enjoy a stay where every moment is enhanced by the charm of Chembra Peak.",
   },
   {
@@ -23,7 +23,7 @@ const amenities = [
   {
     title: "Rooftop Sunset View",
     badge: "VIEW",
-    image: "/amenities/rooftop-view.jpg",
+    image: "/amenities/rooftop-sunset.jpg",
     description: "Take in breathtaking sunset views from our rooftop, where the mountains and mist create the perfect setting for a peaceful evening.",
   }
 ];

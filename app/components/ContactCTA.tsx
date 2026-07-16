@@ -54,7 +54,7 @@ export default function ContactCTA() {
               className="text-[#78716c] text-sm lg:text-base leading-[2] flex-1 pt-1"
               style={{ fontFamily: "'Satoshi', sans-serif" }}
             >
-              <p>Meppadi Rd, Chundale</p>
+              <p>Meppadi Rd, Wayanad, Chundale</p>
               <p>Kunnampetta, Kerala 673123</p>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function ContactCTA() {
               className="text-[#78716c] text-sm lg:text-base leading-[2] flex-1 pt-1"
               style={{ fontFamily: "'Satoshi', sans-serif" }}
             >
-              <p className="hover:text-[#5d3e2e] cursor-pointer transition-colors w-max">foggywoods1@gmail.com</p>
+              <a href="mailto:foggywoods1@gmail.com" className="block hover:text-[#5d3e2e] cursor-pointer transition-colors w-max">foggywoods1@gmail.com</a>
             </div>
           </div>
 

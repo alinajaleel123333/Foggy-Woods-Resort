@@ -104,7 +104,7 @@ export default function Footer() {
                   className="text-white/60 text-sm leading-relaxed"
                   style={{ fontFamily: "'Satoshi', sans-serif" }}
                 >
-                  Meppadi Rd, Chundale<br />
+                  Meppadi Rd, Wayanad, Chundale<br />
                   Kunnampetta, Kerala 673123
                 </span>
               </li>

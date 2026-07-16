@@ -11,7 +11,7 @@ const accommodations = [
       "/accommodations/premier-family-suite.jpg",
       "/accommodations/premier-family-suite-2.jpg"
     ],
-    description: "Featuring two spacious bedrooms for up to 4 adults, this elegant family suite offers breathtaking Chembra Peak and mountain views. Thoughtfully designed for comfort and relaxation, it’s the perfect retreat for a memorable family stay.",
+    description: "Featuring two spacious bedrooms for up to 4 adults and 2 children, this elegant family suite offers breathtaking Chembra Peak and mountain views. Thoughtfully designed for comfort and relaxation, it’s the perfect retreat for a memorable family stay.",
   },
   {
     title: "Grand Family Suite with Mountain View",
@@ -20,7 +20,7 @@ const accommodations = [
       "/accommodations/grand-family-suite-2.jpg",
       "/accommodations/grand-family-suite-3.jpg"
     ],
-    description: "Our three-bedroom Grand Family Suite comfortably accommodates up to 6 adults, offering breathtaking mountain views and spacious interiors. Designed for larger families, it combines modern comfort, privacy, and the serene beauty of Chembra Peak for a truly memorable stay.",
+    description: "Our three-bedroom Grand Family Suite comfortably accommodates up to 6 adults and 2 children, offering breathtaking mountain views and spacious interiors. Designed for larger families, it combines modern comfort, privacy, and the serene beauty of Chembra Peak for a truly memorable stay.",
   },
   {
     title: "Private Pool Villa",
@@ -31,7 +31,7 @@ const accommodations = [
       "/accommodations/pool-villa-3.jpg",
       "/accommodations/pool-villa-4.jpg"
     ],
-    description: "Designed exclusively for couples, our Private Pool Villa – Chembra View features a private swimming pool, elegant interiors, and panoramic mountain views. Unwind in complete privacy while enjoying a romantic escape surrounded by the serene beauty of Chembra Peak.",
+    description: "Designed exclusively for couples, our Private Pool Villa – Chembra Peak View features a private swimming pool, elegant interiors, and panoramic mountain views. Unwind in complete privacy while enjoying a romantic escape surrounded by the serene beauty of Chembra Peak.",
   },
   {
     title: "Double Deluxe Room",
@@ -54,30 +54,18 @@ export default function Accommodations() {
           </h2>
         </div>
 
-        {/* Carousel Container */}
-        <div className="relative flex items-center group">
-          {/* Left Arrow (Desktop only) */}
-          <button className="hidden lg:flex absolute -left-16 w-12 h-12 items-center justify-center border border-[#d6d3d1] rounded-full text-[#78716c] hover:bg-[#5d3e2e] hover:text-white hover:border-[#5d3e2e] transition-all duration-300">
-            <ChevronLeft className="w-5 h-5" strokeWidth={1.5} />
-          </button>
-
-          {/* Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-            {accommodations.map((room, idx) => (
-              <AccommodationCard key={idx} room={room} />
-            ))}
-          </div>
-
-          {/* Right Arrow (Desktop only) */}
-          <button className="hidden lg:flex absolute -right-16 w-12 h-12 items-center justify-center border border-[#d6d3d1] rounded-full text-[#78716c] hover:bg-[#5d3e2e] hover:text-white hover:border-[#5d3e2e] transition-all duration-300">
-            <ChevronRight className="w-5 h-5" strokeWidth={1.5} />
-          </button>
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 w-full">
+          {accommodations.map((room, idx) => (
+            <AccommodationCard key={idx} room={room} />
+          ))}
         </div>
 
         {/* Global Action Button */}
         <div className="mt-16 flex justify-center">
-          <button 
-            className="px-10 py-4 bg-[#5d3e2e] text-white text-xs tracking-[0.2em] uppercase hover:bg-[#462e22] transition-colors"
+          <a 
+            href="#contact"
+            className="px-10 py-4 bg-[#5d3e2e] text-white text-xs tracking-[0.2em] uppercase hover:bg-[#462e22] transition-colors inline-block"
             style={{ fontFamily: "'Satoshi', sans-serif" }}
           >
             <span className="flex items-center gap-3">
@@ -85,7 +73,7 @@ export default function Accommodations() {
               Book Now
               <ChevronRight className="w-3 h-3 opacity-70" />
             </span>
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -111,8 +99,9 @@ function AccommodationCard({ room }: { room: any }) {
           src={room.images[currentImageIndex]}
           alt={room.title}
           fill
-          unoptimized
-          className="object-cover transition-transform duration-700 group-hover/card:scale-105"
+          quality={90}
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover object-center transition-transform duration-700 group-hover/card:scale-105"
         />
         
         {room.images.length > 1 && (

@@ -58,7 +58,7 @@ export default function Navbar() {
               }`}
               style={{ fontFamily: "'Boska', serif", fontWeight: 500, letterSpacing: '-0.01em' }}
             >
-              Foggy Woods
+              Foggy Woods Resort
             </span>
           </Link>
 
