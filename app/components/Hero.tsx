@@ -140,13 +140,14 @@ export default function Hero() {
         </p>
 
         {/* CTA */}
-        <button
+        <a
+          href="#the-retreat"
           className="px-8 py-3 border border-white/40 rounded-full text-white text-sm tracking-[0.15em] uppercase
-                     hover:bg-white hover:text-zinc-900 transition-all duration-300"
+                     hover:bg-white hover:text-zinc-900 transition-all duration-300 inline-block"
           style={{ fontFamily: "'Satoshi', sans-serif" }}
         >
           Explore the Retreat
-        </button>
+        </a>
       </div>
 
       {/* ── Slide Counter + Dots ── */}
