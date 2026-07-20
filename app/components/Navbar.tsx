@@ -64,9 +64,11 @@ export default function Navbar() {
 
           {/* Right: CTA + Hamburger */}
           <div className="flex items-center gap-6">
-            <Link
-              href="/#contact"
-              className={`hidden md:inline-flex items-center px-5 py-2 rounded-full text-xs tracking-[0.2em] uppercase font-semibold border transition-all duration-300 ${
+            <a
+              href="https://wa.me/9074450023"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center px-5 py-2 rounded-full text-xs tracking-[0.2em] uppercase font-semibold border transition-all duration-300 ${
                 isScrolled
                   ? "border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white"
                   : "border-white/70 text-white hover:bg-white hover:text-zinc-900"
@@ -74,7 +76,7 @@ export default function Navbar() {
               style={{ fontFamily: "'Satoshi', sans-serif" }}
             >
               Book Your Stay
-            </Link>
+            </a>
 
             <button
               onClick={() => setSidebarOpen(true)}
@@ -143,12 +145,15 @@ export default function Navbar() {
 
           {/* Bottom accent */}
           <div className="px-10 pb-10">
-            <button
-              className="w-full py-3 border border-white/20 rounded-full text-white/70 text-sm tracking-widest uppercase hover:bg-white/10 hover:text-white transition-all duration-300"
+            <a
+              href="https://wa.me/9074450023"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full py-3 border border-white/20 rounded-full text-white/70 text-sm tracking-widest uppercase hover:bg-white/10 hover:text-white transition-all duration-300 text-center"
               style={{ fontFamily: "'Satoshi', sans-serif" }}
             >
               Book Your Stay
-            </button>
+            </a>
             <p className="text-white/30 text-xs mt-6 tracking-wider" style={{ fontFamily: "'Satoshi', sans-serif" }}>
               Where fog meets serenity
             </p>

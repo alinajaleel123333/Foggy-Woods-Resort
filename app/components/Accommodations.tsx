@@ -64,7 +64,9 @@ export default function Accommodations() {
         {/* Global Action Button */}
         <div className="mt-16 flex justify-center">
           <a 
-            href="#contact"
+            href="https://wa.me/9074450023"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-10 py-4 bg-[#5d3e2e] text-white text-xs tracking-[0.2em] uppercase hover:bg-[#462e22] transition-colors inline-block"
             style={{ fontFamily: "'Satoshi', sans-serif" }}
           >
